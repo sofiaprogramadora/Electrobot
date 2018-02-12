@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Chat Widget DEMO</title>
+    <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="src/normalize.css">
+    <link rel="stylesheet" href="src/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/style2.css"><!--AQUI-->
+    <link rel="stylesheet" href="src/font-awesome-4.7.0/fonts/FuturaLT.ttf">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="src/index.js"></script>
+</head>
+<body>
+  <iframe src="http://www.wikipedia.com/" style="position:fixed; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;">
+        Your browser doesn't support iframes
+    </iframe>
+    <div id="chat-widget"></div>
+    <script>
+        $('#chat-widget').chatwidget({
+            name: 'ChatBot',
+            avatarImage: 'src/img/chat.png'
+
+        });
+    </script>
+</body>
+</html>
